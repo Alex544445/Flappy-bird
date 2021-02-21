@@ -136,10 +136,10 @@ def lose():
 async def fly_image():
     if status==1:
         if play.key_is_pressed("W", "w", "Ц", "ц", "up", "space"):
-            bird.image = "bird2.png"
+            bird.image = "./img/bird2.png"
             await play.timer(0.5)
         else:
-            bird.image = "bird1.png"
+            bird.image = "./img/bird1.png"
 
 @play.repeat_forever
 async def fly():

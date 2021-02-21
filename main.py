@@ -5,10 +5,10 @@ from random import randint
 # if a==b:
 n = 0
 
-fon = play.new_image(image = 'fon.png')
+fon = play.new_image(image = './img/fon.png')
     
 you_lose = play.new_image(
-    image = "You_lose.png")
+    image = "./img/You_lose.png")
 you_lose.hide()
 
 ''' tilda-макет сайт, tilda- сделать кам сайт'''
@@ -16,7 +16,7 @@ you_lose.hide()
 
 
 bird = play.new_image(
-    image = 'bird1.png',
+    image = './img/bird1.png',
     x = -250,
     y = 0,
     size = 150)
@@ -25,21 +25,21 @@ status = 1
 def drow_truba(y_cor, rast):
     delta = 475
     truba2 = play.new_image(
-        image = 'truba2.png',
+        image = './img/truba2.png',
         x = 450,
         y = y_cor - delta,
         size = 100,
         )
 
     truba = play.new_image(
-        image = 'truba.png',
+        image = './img/truba.png',
         x = 450,
         y = y_cor + rast,
         size = 100,
     )
     truba.satus = 1
     score = play.new_image(
-        image = 'score.png',
+        image = './img/score.png',
         x = -300,
         y = 200
     )
@@ -51,7 +51,7 @@ bird.start_physics(obeys_gravity = True, bounciness = False)
 truba_list = []
 
 restart_button = play.new_image(
-    image = "restart_button.png",
+    image = "./img/restart_button.png",
     x = 200,
     y = -150
 )
@@ -65,7 +65,7 @@ score_numbere = play.new_text(
 )
 
 exit_button = play.new_image(
-    image = "exit_button.png",
+    image = "./img/exit_button.png",
     x = -200,
     y = -150
 )
